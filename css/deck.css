@@ -1,0 +1,45 @@
+li.card, li.computerCard {
+  height:100px;
+  width:100px;
+  border-width: 5px,5px,5px,5px;
+  border: double black;
+  margin: 5px,5px,5px,5px;
+  display: inline-block;
+}
+
+.hide {
+  position: absolute !important;
+  top: -9999px !important;
+  left: -9999px !important;
+}
+
+.hearts {
+  background-color: white;
+  background-image: url("http://www.marythought.com/images/hearts.png");
+  background-size: 100%;
+  text-align: center;
+}
+
+.diamonds {
+  background-color: yellow;
+  background-image: url("http://www.marythought.com/images/diamonds.png");
+  background-size: 100%;
+  text-align: center;
+
+}
+
+.clubs {
+  background-color: green;
+  background-image: url("http://www.marythought.com/images/clubs.png");
+  background-size: 100%;
+  text-align: center;
+
+}
+
+.spades {
+  background-color: blue;
+  background-image: url("http://www.marythought.com/images/spades.png");
+  background-size: 100%;
+  text-align: center;
+
+}

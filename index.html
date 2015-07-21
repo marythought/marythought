@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mary Dickson - Projects</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+    </style>
+  </head>
+
+  <body>
+    <header><a href="http://www.marythought.com">Mary Dickson</a></header>
+    <h3>Projects 2015</h3>
+    <nav id="centerDiv">
+      <ul class="centerUL">
+        <li><a href="#robots">Robot Generator</a>&nbsp;&nbsp;|&nbsp;</li>
+        <li><a href="#achievement_unlocked">Achievement Bot</a>&nbsp;&nbsp;|&nbsp;</li>
+        <li><a href="#deckpage">Deck o' Cards</a>&nbsp;&nbsp;|&nbsp;</li>
+        <li><a href="#rabbit_run">Rabbit, Run</a>&nbsp;&nbsp;|&nbsp;</li>
+        <li><a href="#number_game">Number Game</a>&nbsp;&nbsp;|&nbsp;</li>
+        <li><a href="#bletchley_bot">Bletchley Bot</a></li>
+      </ul>
+    </nav>
+
+    <section id="robots">
+      <h1>Robot Generator</h1>
+      <h2>July 2015 - Ruby, Rails, Heroku</h2>
+      <p><a href="https://robot-generator.herokuapp.com/"><img src="images/husbandbot.png" width="200"></a></p>
+      <p><a href="https://robot-generator.herokuapp.com/">Robot Generator</a> is a Ruby on Rails application developed for the Code Fellows Development Accelerator application. I learned how to generate a Rails app from the <a href="http://teamtreehouse.com/library/build-a-todo-list-application-with-rails-4">Treehouse tutorial</a> and adapted their tutorial for my app. Special features: each new robot is assigned a unique image from <a href="http://robohash.org/">robohash.org</a>, based on the "name" field, which is the only required field. After deploying, I updated the validation settings to ensure that if robot arms value is given, it cannot be a negative number. I also added some simple css for improved usability.</p>
+      <ul>
+        <li><a href="https://github.com/marythought/robot_generator">GitHub files</a></li>
+        <li><a href="https://robot-generator.herokuapp.com/">Link to app on Heroku</a></li>
+        <li>Write-up:<a href="http://marydickson.com/rails-for-robots/"> rails for robots</a></li>
+      </ul>
+    </section>
+
+    <hr>
+
+    <section id="achievement_unlocked">
+      <h1>Achievement Bot</h1>
+      <h2>April 2015 - Javascript, Node.js, Heroku, Twitter</h2>
+      <p><a href="http://www.twitter.com/unlockachievemt"><img src="images/trophy.jpeg" width="200"></a></p>
+      <p><a href="http://www.twitter.com/unlockachievemt">@unlockachievemt</a> is a Twitter bot that celebrates achievements. It retweets the latest tweet using the "#achievementunlocked" hashtag (with some filters to avoid game-generated auto-tweets). It attempts to retweet once per hour. I deployed the bot using Heroku, Node.js, and json adapted from various web sources including <a href="https://github.com/dariusk/examplebot">Darius K's 'example bot'</a> and <a href="https://ursooperduper.github.io/2014/11/03/twitter-bot-with-node-js-part-3.html">Sarah K's 'twitter bot with node js' write-up</a>.</p>
+      <ul>
+        <li><a href="https://github.com/marythought/achievement-bot">GitHub files</a></li>
+        <li><a href="https://twitter.com/unlockachievemt">Link to bot on twitter</a></li>
+        <li>Write-up:<a href="http://marydickson.com/mission-unlocked/"> mission unlocked</a></li>
+      </ul>
+    </section>
+
+    <hr>
+
+    <section id ="deckpage">
+      <h1>Deck of Cards, Play War!</h1>
+      <h2>February 2015 - HTML, CSS, Javascript, JQuery</h2>
+      <p><a href="deck.html"> <img src="images/allsuits.png" width="200"></a></p>
+      <p><a href="deck.html">Deck of cards</a> was my final assignment for Code Fellows Foundations I. The page uses Javascript to iterate a deck of cards and JQuery to shuffle them. JQuery assigns classes to the card objects based on their suit and CSS assigns an appropriate image. I added play functionality for a game of "War" against the computer. The game has a flaw wherein it never seems to end (this is not good game design, obviously, but parent friends tell me this is a 'feature').</p>
+      <ul>
+        <li><a href="https://github.com/marythought/deckpage">GitHub files</a></li>
+        <li><a href="deck.html">Link to deck of cards page</a></li>
+        <li>Write-up:<a href="http://marydickson.com/house-of-cards/"> house of cards</a></li>
+      </ul>
+
+    </section>
+
+    <hr>
+
+    <section id="rabbit_run">
+      <h1>Rabbit, Run</h1>
+      <h2>February 2015 - JavaScript, HTML, CSS</h2>
+      <p><a href="rabbitrun.html"><img src="images/rabbit.jpg" width="400"></a></p>
+      <p>Do you have what it takes to <a href="rabbitrun.html">race Peter Rabbit</a>? This game uses JavaScript objects and functions ("this.speed" and "this.position"), taking in user input for speed and focus. Second and third week assignment for Code Fellows Foundations I.</p>
+      <ul>
+        <li><a href="https://github.com/marythought/animal-game-and-number-guess">GitHub files</a></li>
+        <li><a href="rabbitrun.html">Link to rabbit race page</a></li>
+        <li>Write-up:<a href="http://marydickson.com/the-toggle-button-that-wasnt/"> the toggle button that wasn't</a></li>
+      </ul>
+    </section>
+
+    <hr>
+
+    <section id="number_game">
+      <h1>Number Guessing Game</h1>
+      <h2>February 2015 - HTML, JavaScript</h2>
+      <p><a href="numguess.html"><img src="images/numbergarden.jpg" width="400"></a></p>
+      <p>Player guesses a secret number between 1 and 100, the game keeps track of your high and low to narrow the range and reports back when you've won with how many guesses it took. Initially used 'prompt' and 'alert' to interact with player. Simple little JavaScript game, first assignment of Code Fellows Foundations I class (later built out with some html, JavaScript and css).</p>
+      <ul>
+        <li><a href="https://github.com/marythought/animal-game-and-number-guess">GitHub files</a></li>
+        <li><a href="numguess.html">Link to number guess page</a></li>
+        <li>Write-up:<a href="http://marydickson.com/your-bill-is-nan/"> your bill is 'NaN'</a></li>
+      </ul>
+    </section>
+
+    <hr>
+
+    <section id="bletchley_bot">
+      <h1>Bletchley Bot</h1>
+      <h2>January 2015 - Python, Heroku, Twitter</h2>
+      <p><a href="http://www.twitter.com/bletchleyroll"><img src="images/bletchley.png" width="400"></a></p>
+      <p>More than 75% of Bletchley Park's code-cracking veterans are women. Using Python, I created a bot that tweets their names and service summaries every 30 minutes. Through this process I practiced using Python to manipulate .csv data and communicate with twitter's API. I also learned to prep and deploy apps using git and Heroku. This was one of my first coding projects, and still a favorite.
+        <ul>
+          <li><a href="https://github.com/marythought/bletchley-bot">GitHub files</a></li>
+          <li><a href="https://twitter.com/BletchleyRoll">Link to bot on twitter</a></li>
+          <li>Write-ups:<a href="http://marydickson.com/build-a-twitter-bot-with-python/"> 1</a>, <a href="http://marydickson.com/finishing-the-bot/">2</a></li>
+        </ul>
+      </p>
+    </section>
+
+    <hr>
+
+    <footer>
+      <hr />
+      <h1>About this page</h1>
+      <p> Hi, I'm <a href="https://about.me/marydickson">Mary</a> and I'm learning to code with <a href="http://www.codefellows.org">Code Fellows</a>. I've learned html, css, javascript, jQuery, and I'm currently studying Ruby on Rails. You can read about my experience (and some other stuff) at <a href="http://www.marydickson.com">www.marydickson.com</a>.
+      </p>
+      <blockquote cite="https://www.wordnik.com/words/merrythought"><p><i>"The wings, breast, and <a href="https://www.wordnik.com/words/merrythought">merrythought</a> are esteemed the prime parts of a fowl and are usually served to the ladies of the company to whom legs except as a matter of paramount necessity should not be given."</i></p>
+      <p><a href="https://www.wordnik.com/adoptaword"><img src="http://www.marythought.com/images/adoptaword.png"></a></p>
+      <br />
+      <br />
+      <br />
+    </footer>
+  </body>
+</html>

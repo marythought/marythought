@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+	<title>Number Game!</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+	</head>
+	<body>
+		<h1>Guess the secret number!</h1>
+		<p>Refresh to play again.</p>
+		<p>Had enough? Go <a href="http://www.marydickson.com">home</a>.</p>
+	</body>
+<script>
+var guess, answer, message, done, guessedSoFarLow, guessedSoFarHigh, iteration, low, high;
+answer = Math.floor(Math.random() * 100); //math floor rounds down and truncates
+done = false;
+//keep track of high and low guesses in arrays so we can sort the numbers
+guessedSoFarLow = [];
+guessedSoFarHigh = [];
+iteration = 1;
+//set the beginning high and low boundries, these will be changed in code
+high = 100
+low = 1
+
+while (done === false) {
+	guess = prompt("Guess a number between 1 and 100, or EXIT. Number is between " + low + ' and ' + high + '.');
+	if (guess == answer) {
+		if (iteration == 1) {
+			message = "You win on the first guess! Ahhmazing!";41
+		} else {
+			message = "You win! The number was " + guess +". It took you " + iteration + " tries.";
+		}
+		alert(message);
+		//end the game
+		done = true; 
+		break;
+	} else if (guess == 'EXIT') {
+			break;
+	} else if (isNaN(guess) == true) {
+			message = guess + " is not a number, you goof.";
+	} else if (guess < 1 || guess > 100) {
+			message = guess + " is out of range. Try again.";
+	} else if (guess < answer) {
+			message = "Your guess is LOW. Try again.";
+			guessedSoFarLow.push(guess);
+			guessedSoFarLow.sort(function(a,b){return a-b});
+			low = Math.max(0, guessedSoFarLow[guessedSoFarLow.length-1]);
+			iteration += 1;
+	} else if (guess > answer) {
+			message = "Your guess is HIGH. Try again.";
+			guessedSoFarHigh.push(guess);
+			guessedSoFarHigh.sort(function(a,b){return a-b});
+			high = Math.min(100, guessedSoFarHigh[0]);
+			iteration += 1;
+	} else {
+			message = "I... I don't understand. Try again.";
+	}
+	alert(message);
+}
+
+</script>
+
+</html>

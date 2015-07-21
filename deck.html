@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+  <title>Deck -o- Cards</title>
+  <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+  <link rel="stylesheet" type="text/css" href="css/deck.css"/>
+</head>
+
+<body>
+  <h1>Let's Play Cards!</h1>
+  <button id="runButton">Shuffle cards</button>
+  <button id="dealButton">Deal cards</button>
+  <button id="compareButton" class="hide">Compare cards</button>
+  <p id="playtext"></p>
+  <p id="resultstext"></p>
+  <section id="userSpace">
+    <h2>Your cards:</h2>
+    <ul id="deck">
+    </ul>
+  </section>
+  <section id="computerSpace">
+    <h2>Computer's cards:</h2>
+    <ul id="computerDeck">
+    </ul>
+  </section>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="js/deck.js" type="text/javascript"></script>
+</body>
+</html>
